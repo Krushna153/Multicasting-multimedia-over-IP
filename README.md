@@ -5,25 +5,25 @@ It is an Internet Television application where the client establishes a control 
 
 SERVER FOLDER
 
-  To run server.c file (TCP code to send station info and site info) 
-	Compile: gcc server.c
-	Run    : ./a.out
+  server.c file (TCP code to send station info and site info) 
+	1) To Compile: gcc server.c
+	2) To Run    : ./a.out
 
-  To run station1.c file (UDP code for station 1)
-	Compile: gcc station1.c
-	Run    : ./a.out 239.192.4.1
+  station1.c file (UDP code for station 1)
+	1) To Compile: gcc station1.c
+	2) To Run    : ./a.out 239.192.4.1
 
-  To run station2.c (UDP code for statiion 2)
-	Compile: gcc station2.c
-	Run    : ./a.out 239.192.4.2
+  station2.c (UDP code for statiion 2)
+	1) To Compile: gcc station2.c
+	2) To Run    : ./a.out 239.192.4.2
 
 CLIENT FOLDER
 
-  To run client.c file (TCP code to recieve station info and site info)
-	Compile: gcc `pkg-config --cflags gtk+-3.0` -o client client.c `pkg-config --libs gtk+-3.0`
-	Run    : sudo ./client <IP-ADDRESS of the server>
+  client.c file (TCP code to recieve station info and site info)
+	1) To Compile: gcc `pkg-config --cflags gtk+-3.0` -o client client.c `pkg-config --libs gtk+-3.0`
+	2) To Run    : sudo ./client <IP-ADDRESS of the server>
 
-  To run receiver.c file (UDP code to receive data)
-	Compiled and executed by the client.c file.
+  receiver.c file (UDP code to receive data)
+	--> Compiled and executed by the client.c file.
 
 
